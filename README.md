@@ -1,2 +1,3 @@
 # eatandgo
-This my Django project
+
+Pizzeria website implemented in Django!
