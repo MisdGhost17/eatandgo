@@ -1,0 +1,11 @@
+{% extends 'main/layout.html' %}
+{%block title%}Удаление{% endblock %}
+{% block content %}
+    <form method="post">
+        <p>Вы уверены что хотите удалить обьект?</p>
+        {% csrf_token %}
+        {{ form }}
+        <input class="confirm-delete-button" type="submit" value="Подтвердить">
+    </form>
+    <a href="{% url "foodcard_detail" foodcard.id %}"><button class="back-button">Назад</button></a>
+{% endblock %}

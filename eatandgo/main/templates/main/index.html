@@ -1,0 +1,26 @@
+{% extends 'main/layout.html' %}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+    <div class="categories">
+    {% for c in categories %}
+        {% if c.pk == cat_selected %}
+            <a href="{{ c.get_absolute_url }}"><button class="cat-button-selected">{{ c.name }}</button></a>
+        {% else %}
+            <a href="{{ c.get_absolute_url }}"><button class="cat-button">{{ c.name }}</button></a>
+        {% endif %}
+    {% endfor %}
+    </div>
+    {% for foodcard in foodcards %}
+        <div class="foodcard">
+            <h1>{{ foodcard.title }}</h1>
+            <img class="mini-image" src="{{ foodcard.image.url }}">
+            {% if foodcard.display_sostav == True %}
+                <p class='sostav'>Состав:{{ foodcard.sostav }}</p>
+            {% else %}
+                <p class='sostav'></p>
+            {% endif %}
+            <p class='price'>{{ foodcard.price }}₽</p>
+            <a href="{% url 'foodcard_detail' foodcard.id %}"><button>Подробнее</button></a>
+        </div>
+    {% endfor %}
+{% endblock %}

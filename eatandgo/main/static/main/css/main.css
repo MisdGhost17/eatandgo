@@ -1,0 +1,257 @@
+body{
+    background-color: white;
+    font-family: "SUSE", sans-serif;
+}
+
+.logo{
+    position: absolute;
+    left: 5px;
+    top: 4px;
+    width: 75px;
+    height: 75px;
+}
+
+header{
+    margin: -10px;
+    height: 82px;
+    background-color: #ffb423;
+}
+
+.div-menu-up{
+    position: absolute;
+    top: 27px;
+    left: 100px;
+}
+
+header button{
+    color: #351614;
+    width: 100px;
+    border-radius: 50px;
+    height: 30px;
+    border: none;
+    font-size: 16px;
+}
+
+header button:hover{
+    transition: transform .2s;
+    transform: scale(1.05)
+}
+
+.div-contact-up{
+    position: absolute;
+    top: 27px;
+    left: 230px;
+}
+
+.div-aboutus-up{
+    position: absolute;
+    left: 360px;
+    top:27px;
+}
+
+.admin-button{
+    position: absolute;
+    left: 490px;
+    top: 27px;
+    background-color: #27ff23;
+    font-size: 12px;
+}
+
+.cat-button{
+    position: relative;
+    top: 20px;
+    margin-left: 10px;
+    width: 100px;
+    border-radius: 50px;
+    height: 30px;
+    background-color: white;
+    border: 2px solid;
+    border-color: #ffb423;
+    color: #351614;
+    font-size: 15px;
+}
+
+.cat-button-selected{
+    position: relative;
+    top: 20px;
+    margin-left: 10px;
+    width: 100px;
+    border-radius: 50px;
+    height: 30px;
+    background-color: #ffb423;
+    border: none;
+    border-color: #ffb423;
+    color: #351614;
+    font-size: 16px;
+}
+
+.categories{
+    height: 50px;
+    width: max;
+}
+
+.foodcard{
+    margin-top: 20px;
+    display: inline-block;
+    height: 400px;
+    margin-left: 30px;
+    width: 300px;
+    border-left: 3px solid #ffb423;
+    border-right: 3px solid #D18A00;
+    background-image: linear-gradient(45deg, #ffb423, #D18A00), linear-gradient(45deg, #D18A00, #ffb423);
+    background-size: 100% 3px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    color: #351614;
+}
+
+
+
+
+.foodcard .mini-image{
+    position: relative;
+    width: 250px;
+    height: 200px;
+    left: 24px;
+    right: auto;
+}
+
+.foodcard h1{
+    position: relative;
+    font-size: 21px;
+    text-align: center;
+}
+
+.foodcard .sostav{
+    position: relative;
+    font-size: 12px;
+    height: 50px;
+    left: 5px;
+}
+
+.foodcard .price{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    left: 16px;
+}
+
+.foodcard button{
+    position: relative;
+    left: 130px;
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #ffb423;
+    border: none;
+}
+
+.addtitlefield{
+    position: relative;
+    top: 20px;
+    width: 250px;
+    height: 35px;
+}
+
+.addimagefield{
+    position: relative;
+    top: 10px;
+    width: auto;
+    height: auto;
+}
+
+.addsostavfield{
+    position: relative;
+    top: 10px;
+    width: 300px;
+    height: 100px;
+}
+
+.addtextfield{
+    position: relative;
+    float: right;
+    top: -100px;
+    left: -100px;
+    width: 900px;
+    height: 500px;
+}
+
+.addcategoryfield{
+    position: relative;
+}
+
+.addbutton{
+    position: relative;
+    width: 400px;
+    height: 100px;
+    border-radius: 30px;
+    background-color: #64fb00;
+    border: none;
+    font-size: 30px;
+}
+
+.confirm-delete-button{
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #fb0000;
+    border: none;
+    font-size: 18px;
+}
+
+.back-button{
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #ffb423;
+    border: none;
+    font-size: 18px;
+    text-decoration: none;
+    color:#351614;
+}
+
+.about-text p{
+    width: 500px;
+    height: 500px;
+    color:#351614;
+    font-size: 26px;
+    text-align: center;
+}
+
+.about-text{
+    width: 100px;
+    height: 500px;
+    margin-left: 40px;
+}
+
+.div-about-image{
+    float: right;
+    margin-right: 300px;
+    width: 500px;
+    height: 500px;
+    margin-top: 30px;
+}
+
+.about-image{
+    width: 700px;
+    height: 550px;
+}
+
+.map{
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 20px;
+    color:#351614;
+}
+
+
+.contact-text{
+    display: inline-block;
+    margin-top: 42px;
+    position: absolute;
+    margin-left: 70px;
+    color:#351614;
+}

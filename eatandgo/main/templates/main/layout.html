@@ -1,0 +1,32 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+    <header>
+        <a href="{% url 'main' %}"><img class = "logo" src="{% static "main/image/logo.jpg" %}"></a>
+        <div class="div-menu-up">
+            <a href="{% url 'main'%}"><button>Меню</button></a>
+        </div>
+        <div class="div-contact-up">
+            <a href="{% url 'contact'%}"><button>Контакты</button></a>
+        </div>
+        <div class="div-aboutus-up">
+            <a href="{% url 'about'%}"><button>О нас</button></a>
+        </div>
+        {% if user.is_superuser %}
+            <a href="{% url 'add_foodcard' %}"><button class="admin-button">Добавить блюдо</button></a><br>
+        {% endif %}
+    </header>
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>

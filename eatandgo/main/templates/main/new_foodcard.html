@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+{%block title%}Создание новой краточки блюда{% endblock %}
+{% block content %}
+    <form method="post" enctype="multipart/form-data" class="addform">
+        {% csrf_token %}
+        {{ form.title }}<br>
+        <p class="addimagefield">Изображение: {{ form.image }}</p>
+        {{ form.sostav }}<br>
+        <p>Отображать состав{{ form.display_sostav }}<br>
+        {{ form.description }}<br>
+        {{ form.price }}<br>
+        <p class="addcategoryfield">Категория: {{ form.category }}</p><br>
+        <button type="submit" class='addbutton'>Добавить</button>
+    </form>
+    <h1>{{ error }}</h1>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ foodcard.title }}{% endblock %}
+
+{% block content %}
+    <h1>{{ foodcard.title }}</h1>
+    <img src='{{ foodcard.image.url }}'>
+    <p> Подробное описание: {{ foodcard.description }}</p>
+    <h2>Цена: {{ foodcard.price }}₽</h2>
+    {% if user.is_superuser %}
+        <a href="{% url 'update_foodcard' foodcard.id %}"><button>Редактировать</button></a>
+        <a href="{% url 'delete_foodcard' foodcard.id %}"><button>Удалить</button></a>
+    {% endif %}
+{% endblock %}
